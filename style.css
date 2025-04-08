@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #C2A08E, #E6D5C3, #F5E9DA);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #3D2A18; 
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  background: rgba(255, 255, 255, 0.8); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 50px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.hero button, .btn-back, #contact-form button {
+  background: #8B5A2B; 
+  color: white;
+}
+
+.hero button:hover, .btn-back:hover, #contact-form button:hover {
+  background: #6D4221;
+}
+
+.card, .achievement-card {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  font-size: 20px;
+}
+
+.logo {
+  font-family: cursive;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.nav-links a:hover {
+  background-color: #8b5a2b;
+  color: white;
+}
+
+.nav-links a.active {
+  background-color: #6d4221;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: #8b5a2b;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background: #6d4221;
+}
+
+.about {
+  padding: 50px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.about-text {
+  flex: 1; 
+  max-width: 60%;
+  margin-right: 50px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3d2a18;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #4a3c2a;
+}
+
+.about-image {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  max-width: 35%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.card {
+  background: rgb(237, 221, 203);
+  padding: 20px;
+  border-radius: 15px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#achievement {
+  padding: 50px 0;
+}
+
+.achievement-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.achievement-container h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #3d2a18;
+}
+
+.achievement-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.achievement-card {
+  display: block;
+  width: 30%;
+  background: rgb(237, 221, 203);
+  text-decoration: none;
+  color: #000;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.achievement-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.achievement-card h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#project {
+  padding: 50px 0;
+}
+
+.project-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.project-container h2 {
+  font-size: 36px;
+  color: #3d2a18;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 40px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  flex: 1;
+  min-width: 200px;
+  background-color: #f5e9da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-image img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.project-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.project-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3d2a18;
+}
+
+.project-content p {
+  font-size: 16px;
+  color: #4a3c2a;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.visit-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #8b5a2b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .visit-btn {
+  color: #6d4221;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3d2a18;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-section .email {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons .icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+  border-radius: 50%;
+}
+
+.social-icons .icon img:hover {
+  transform: scale(1.1);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  width: 300px;
+  margin: 0 auto 30px auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact-form button {
+  background: #8b5a2b;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background: #6d4221;
+}
+
+.btn-back {
+  display: inline-block;
+  background-color: #8b5a2b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #6d4221;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text, .about-image {
+    width: 100%;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .achievement-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .achievement-card {
+    width: 80%;
+  }
+}
