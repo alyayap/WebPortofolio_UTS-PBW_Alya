@@ -1,4 +1,4 @@
-Website ini merupakan portofolio pribadi Alya Rahma Khamila, dikembangkan sebagai bagian dari Ujian Tengah Semester (UTS) mata kuliah Pemrograman Berbasis Web (PBW). Tujuan utama dari website ini adalah untuk memperkenalkan diri secara profesional, menampilkan karya-karya dan pencapaian, serta menyediakan wadah untuk berinteraksi melalui informasi kontak yang tersedia. 
+Website ini merupakan portofolio pribadi Alya Rahma Khamila. Tujuan utama dari website ini adalah untuk memperkenalkan diri secara profesional, menampilkan karya-karya dan pencapaian, serta menyediakan wadah untuk berinteraksi melalui informasi kontak yang tersedia. 
 
 🔍 Deskripsi Umum 
 Portofolio ini dirancang dengan pendekatan visual yang elegan dan lembut, menggunakan kombinasi warna pastel dan efek animasi gradasi yang menciptakan kesan hangat namun tetap profesional. Desain halaman bersifat sederhana namun fungsional, memfokuskan pengguna pada konten yang relevan. 
